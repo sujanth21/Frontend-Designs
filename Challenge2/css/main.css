@@ -84,3 +84,31 @@ p {
   margin-top: 40px;
   color: hsl(217, 19%, 35%);
 }
+
+@media screen and (max-width: 450px) {
+  .main-container {
+    width: 320px;
+    margin: auto;
+  }
+  .content {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content .img-container img {
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
